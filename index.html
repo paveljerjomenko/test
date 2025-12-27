@@ -52,9 +52,11 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-decoration: none;
+            border: none;
             border-radius: 50px;
             font-weight: 600;
             font-size: 1.1rem;
+            cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -109,21 +111,21 @@
     <div class="container">
         <h1>Welcome</h1>
         <p>Discover something amazing. We're here to help you succeed.</p>
-        <a href="#" class="cta-button">Get Started</a>
+        <button class="cta-button" onclick="alert('Welcome! This is a demo landing page.')">Get Started</button>
 
         <div class="features">
             <div class="feature">
-                <div class="feature-icon">🚀</div>
+                <div class="feature-icon" aria-label="Rocket icon representing speed">🚀</div>
                 <h3>Fast</h3>
                 <p>Lightning-fast performance for the best experience</p>
             </div>
             <div class="feature">
-                <div class="feature-icon">💡</div>
+                <div class="feature-icon" aria-label="Light bulb icon representing simplicity">💡</div>
                 <h3>Simple</h3>
                 <p>Easy to use with an intuitive interface</p>
             </div>
             <div class="feature">
-                <div class="feature-icon">🔒</div>
+                <div class="feature-icon" aria-label="Lock icon representing security">🔒</div>
                 <h3>Secure</h3>
                 <p>Your data is safe and protected</p>
             </div>
